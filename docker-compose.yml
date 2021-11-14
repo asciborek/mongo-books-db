@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo:5.0.3
+    container_name: 'mongo-books-db'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: BaEV2cTvCQH69D72
+      MONGO_INITDB_DATABASE: books
+    ports:
+      - '27017:27017'
